@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="header">
+    <h1 class="tnp-title">
+      Relax Time Never Pause
+      <br />
+      时间永不停顿
+    </h1>
+  </div>
+  <div class="center-area">
+    <p class="current-date-and-time">
+      {{currentDate | date: "yyyy 年 MM 月 dd 日"}} <br /> {{ currentTime | date: "HH 点 mm 分 ss 秒"}}
+    </p>
+  </div>
+  <div class="footer">
+    <p class="current-time-millsecond">
+      {{ currentMillSecond | date: "SSS"}}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+p,
+h1 {
+  font-family: "Yanone Kaffeesatz"
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(autofill, 0.3fr 2.4fr 0.3fr);
+  gap: 0px 0px;
+  height: 95vh;
+  grid-auto-flow: row;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "header header header"
+    "center-area center-area center-area"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  overflow: hidden;
+}
+
+.center-area {
+  grid-area: center-area;
+  overflow: hidden;
+}
+
+.footer {
+  grid-area: footer;
+  overflow: hidden;
+}
+
+.tnp-title {
+  font-size: 5em;
+}
+
+.current-date-and-time {
+  font-size: 10em;
+}
+
+.current-time-millsecond {
+  font-size: 7em;
+}
+
+@media screen and (max-width: 1440px) {
+
+  .ttl-title {
+    font-size: 2em;
+  }
+
+  .current-date-and-time {
+    font-size: 3em;
+  }
+
+  .current-time-millsecond {
+    font-size: 2em;
+  }
+}
